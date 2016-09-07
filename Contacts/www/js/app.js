@@ -112,6 +112,15 @@ app.controller('ContactCtrl', ['$scope', '$cordovaContacts', function ($scope,$c
       alert("There is an error saving contact. Please see console");
       console.log(err);
     })
+  };
+
+  $scope.addContact=function () {
+    $cordovaContacts.save($scope.contactSave).then(function (result) {
+      alert("The contact information has been saved");
+    },function (err) {
+      alert("There is an error saving contact. Please see console");
+      console.log(err);
+    })
   }
 
 }]);
