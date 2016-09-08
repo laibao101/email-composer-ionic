@@ -1,0 +1,12 @@
+{
+  "name": "HorizontalSlide",
+  "app_id": "0a4c17a6",
+  "gulpStartupTasks": [
+    "sass",
+    "watch"
+  ],
+  "watchPatterns": [
+    "www/**/*",
+    "!www/lib/**/*"
+  ]
+}
