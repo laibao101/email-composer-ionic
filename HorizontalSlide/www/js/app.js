@@ -75,10 +75,10 @@ app.directive('myDirective', ['$rootScope', function($rootScope) {
             myData: '=data'
         },
         link: function(scope, element, attrs) {
-            scope.$watch('attrs.data', function(newValue, oldValue, scope) {
+            scope.$watch(attrs.data, function(newValue, oldValue, scope) {
                 if (newValue != oldValue) {
                     console.log("myData has changeed");
-                    console.log(newVal);
+                    console.log(newValue);
                 }
             }, true);
         }
