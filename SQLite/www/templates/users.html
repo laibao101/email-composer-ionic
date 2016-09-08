@@ -1,0 +1,15 @@
+<ion-view view-title="Users">
+    <ion-content>
+        <ion-list>
+            <ion-item ng-repeat="user in users" class="item" ng-click="openUserModal(user)">
+                {{user.name}}
+            </ion-item>
+            <div class="item item-input-inset">
+                <label for="" class="item-input-wrapper">
+                    <input type="text" placeholder="New user" ng-model="newUser.name">
+                </label>
+                <button class="button button-samll" ng-click="addUser()">Add</button>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>
